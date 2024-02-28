@@ -1,35 +1,36 @@
 # tram-46
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
 ## Project Setup
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## Run development server locally
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+## Git
+
+Add all file changes
 
 ```sh
-npm run build
+git add .
 ```
 
-### Lint with [ESLint](https://eslint.org/)
-
+Take snapshot (commit changes)
 ```sh
-npm run lint
+git commit -m "<message>"
+```
+
+See history
+```sh
+git log
+```
+
+Push to remote
+```sh
+git push origin main
 ```
