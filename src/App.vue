@@ -1,36 +1,89 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import HeaderComponent from './components/HeaderComponent.vue'
+import Sidebar from './components/Sidebar.vue';
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+      sideBarShouldBeShown: false
+    }
+  },
+  methods: {
+    showSideBar() {
+      this.sideBarShouldBeShown = true
+    },
+    hideSideBar() {
+      this.sideBarShouldBeShown = false
+    }
+  }
+}
 </script>
 
 <template>
-  <header>
-    <div>
-      Public Transportation Infographic
-    </div>
+  <div class="grid-container">
+    <HeaderComponent @showSideBar="showSideBar" />
 
-    <div class="hamgiin-gadna-taliin-hairtsag">
-      <div class="dotorh-hairtsag-1">
-        <div class="jijig-hairtsag-1">
-          1
+    <Sidebar
+      :sideBarShouldBeShown="sideBarShouldBeShown"
+      @hideSideBar="hideSideBar"
+      />
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <h2>DASHBOARD</h2>
+      </div>
+
+      <div class="main-cards">
+        <div class="card">
+          <div class="card-inner">
+            <h3>Name 7</h3>
+            <span class="material-icons-outlined">inventory_2</span>
+          </div>
+          <h1>249</h1>
         </div>
-        <div class="jijig-hairtsag-2">
-          2
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>Name 8</h3>
+            <span class="material-icons-outlined">category</span>
+          </div>
+          <h1>25</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>Name 9</h3>
+            <span class="material-icons-outlined">groups</span>
+          </div>
+          <h1>1500</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>Name 10</h3>
+            <span class="material-icons-outlined">notification_important</span>
+          </div>
+          <h1>56</h1>
         </div>
       </div>
-      <div class="dotorh-hairtsag-2">
-        <div class="jijig-hairtsag-3">
-          3
+
+      <div class="charts">
+        <div class="charts-card">
+          <h2 class="chart-title">Name 11</h2>
+          <div id="bar-chart"></div>
         </div>
-        <div class="jijig-hairtsag-4">
-          4
+
+        <div class="charts-card">
+          <h2 class="chart-title">Name 12</h2>
+          <div id="area-chart"></div>
         </div>
       </div>
-    </div>
-
-
-  </header>
-
-  <RouterView />
+    </main>
+    <!-- End Main -->
+  </div>
 </template>
 
 <style scoped>
@@ -50,8 +103,6 @@ import { RouterLink, RouterView } from 'vue-router'
   height: calc(500px - 30px);
   display: flex;
 }
-
-
 
 .jijig-hairtsag-1 {
   background: green;
@@ -76,5 +127,4 @@ import { RouterLink, RouterView } from 'vue-router'
   border: 1px solid;
   width: 70%;
 }
-
 </style>

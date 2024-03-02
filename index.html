@@ -10,145 +10,16 @@
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="grid-container">
 
-      <!-- Header -->
-      <header class="header">
-        <div class="menu-icon" onclick="openSidebar()">
-          <span class="material-icons-outlined">menu</span>
-        </div>
-        <div class="header-left">
-          <span class="material-icons-outlined">search</span>
-        </div>
-        <div class="header-right">
-          <span>
-            <input type="range" name="time-range" id="time-range">
-          </span>
-          <!--<span class="material-icons-outlined">notifications</span>-->
-          <!--<span class="material-icons-outlined">email</span>-->
-          <span class="material-icons-outlined">account_circle</span>
-        </div>
-      </header>
-      <!-- End Header -->
-
-      <!-- Sidebar -->
-      <aside id="sidebar">
-        <div class="sidebar-title">
-          <div class="sidebar-brand">
-            <span class="material-symbols-outlined">emoji_transportation</span>Public Transportation Webmap
-          </div>
-          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
-        </div>
-
-        <ul class="sidebar-list">
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">dashboard</span> Dashboard
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">inventory_2</span> Name 1
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">category</span> Name 2
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">groups</span> Name 3
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">fact_check</span> Name 4
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">poll</span> Name 5
-            </a>
-          </li>
-          <li class="sidebar-list-item">
-            <a href="#" target="_blank">
-              <span class="material-icons-outlined">settings</span> Name 6
-            </a>
-          </li>
-        </ul>
-      </aside>
-      <!-- End Sidebar -->
-
-      <!-- Main -->
-      <main class="main-container">
-        <div class="main-title">
-          <h2>DASHBOARD</h2>
-        </div>
-
-        <div class="main-cards">
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>Name 7</h3>
-              <span class="material-icons-outlined">inventory_2</span>
-            </div>
-            <h1>249</h1>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>Name 8</h3>
-              <span class="material-icons-outlined">category</span>
-            </div>
-            <h1>25</h1>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>Name 9</h3>
-              <span class="material-icons-outlined">groups</span>
-            </div>
-            <h1>1500</h1>
-          </div>
-
-          <div class="card">
-            <div class="card-inner">
-              <h3>Name 10</h3>
-              <span class="material-icons-outlined">notification_important</span>
-            </div>
-            <h1>56</h1>
-          </div>
-
-        </div>
-
-        <div class="charts">
-
-          <div class="charts-card">
-            <h2 class="chart-title">Name 11</h2>
-            <div id="bar-chart"></div>
-          </div>
-
-          <div class="charts-card">
-            <h2 class="chart-title">Name 12</h2>
-            <div id="area-chart"></div>
-          </div>
-
-        </div>
-      </main>
-      <!-- End Main -->
-
-    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
 
     <!-- Scripts -->
     <!-- ApexCharts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script> -->
     <!-- Custom JS -->
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
   </body>
 </html>
