@@ -1,6 +1,6 @@
 <script>
 export default {
-  emits: ['showSideBar'],
+  emits: ['showSideBar', 'updateTimeOfDay'],
 }
 </script>
 
@@ -16,7 +16,7 @@ export default {
     </div>
     <div class="header-right">
       <span>
-        <input type="range" name="time-range" id="time-range" />
+        <input type="range" @change="$emit('updateTimeOfDay', $event)" name="time-range" id="time-range" />
       </span>
       <!--<span class="material-icons-outlined">notifications</span>-->
       <!--<span class="material-icons-outlined">email</span>-->

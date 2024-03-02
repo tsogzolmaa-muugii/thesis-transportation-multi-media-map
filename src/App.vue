@@ -7,10 +7,15 @@ import Sidebar from './components/Sidebar.vue';
 export default {
   data() {
     return {
-      sideBarShouldBeShown: false
+      sideBarShouldBeShown: false,
+      numericValue: NaN
     }
   },
   methods: {
+    updateTimeOfDay(e) {
+      const numericValue = e.target.value
+      this.numericValue = numericValue
+    },
     showSideBar() {
       this.sideBarShouldBeShown = true
     },
@@ -23,7 +28,10 @@ export default {
 
 <template>
   <div class="grid-container">
-    <HeaderComponent @showSideBar="showSideBar" />
+    <HeaderComponent
+      @showSideBar="showSideBar"
+      @updateTimeOfDay="updateTimeOfDay"
+    />
 
     <Sidebar
       :sideBarShouldBeShown="sideBarShouldBeShown"
@@ -42,7 +50,7 @@ export default {
             <h3>Name 7</h3>
             <span class="material-icons-outlined">inventory_2</span>
           </div>
-          <h1>249</h1>
+          <h1>{{ numericValue }}</h1>
         </div>
 
         <div class="card">
@@ -50,7 +58,7 @@ export default {
             <h3>Name 8</h3>
             <span class="material-icons-outlined">category</span>
           </div>
-          <h1>25</h1>
+          <h1>{{ numericValue }}</h1>
         </div>
 
         <div class="card">
@@ -58,7 +66,7 @@ export default {
             <h3>Name 9</h3>
             <span class="material-icons-outlined">groups</span>
           </div>
-          <h1>1500</h1>
+          <h1>{{ numericValue }}</h1>
         </div>
 
         <div class="card">
@@ -66,7 +74,7 @@ export default {
             <h3>Name 10</h3>
             <span class="material-icons-outlined">notification_important</span>
           </div>
-          <h1>56</h1>
+          <h1>{{ numericValue }}</h1>
         </div>
       </div>
 
