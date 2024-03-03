@@ -1,6 +1,8 @@
 <script setup>
 import HeaderComponent from './components/HeaderComponent.vue'
 import Sidebar from './components/Sidebar.vue';
+import { passenger_data_list } from './data/data.js';
+import { convertForSlider } from './utils/conversion.js'
 </script>
 
 <script>
@@ -8,13 +10,17 @@ export default {
   data() {
     return {
       sideBarShouldBeShown: false,
-      numericValue: NaN
+      numericValue: 5,
+      passenger_data: null,
     }
   },
   methods: {
     updateTimeOfDay(e) {
-      const numericValue = e.target.value
+      const numericValue = convertForSlider(5, 22, e.target.value)
       this.numericValue = numericValue
+
+      const passenger_data = passenger_data_list.find(d => d.left == numericValue)
+      this.passenger_data = passenger_data
     },
     showSideBar() {
       this.sideBarShouldBeShown = true
@@ -43,6 +49,8 @@ export default {
       <div class="main-title">
         <h2>DASHBOARD</h2>
       </div>
+
+      {{ passenger_data }}
 
       <div class="main-cards">
         <div class="card">
