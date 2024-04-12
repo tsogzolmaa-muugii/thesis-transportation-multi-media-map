@@ -7,8 +7,25 @@ defineProps({
 })
 </script>
 <script>
+
 export default {
   emits: ['hideSideBar'],
+  data() {
+     return {
+      bus5Points: []
+     }
+  },
+  methods: {
+    async getBus5Points() {
+      const response = await fetch('../data/bus_5_points.geojson');
+      const data = await response.json();
+      alert('ZA DATAGAA ORUULLLAA SHUUU')
+      this.bus5Points = data.features
+    }
+  },
+  mounted() {
+    this.getBus5Points()
+  }
 }
 </script>
 
@@ -23,37 +40,10 @@ export default {
       <span class="material-icons-outlined side-bar-close" @click="$emit('hideSideBar')">close</span>
     </div>
 
+    <h1>Bus 5</h1>
     <ul class="sidebar-list">
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank">
-          <span class="material-icons-outlined">dashboard</span> Dashboard
-        </a>
-      </li>
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank">
-          <span class="material-icons-outlined">inventory_2</span> Name 1
-        </a>
-      </li>
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank">
-          <span class="material-icons-outlined">category</span> Name 2
-        </a>
-      </li>
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank"> <span class="material-icons-outlined">groups</span> Name 3 </a>
-      </li>
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank">
-          <span class="material-icons-outlined">fact_check</span> Name 4
-        </a>
-      </li>
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank"> <span class="material-icons-outlined">poll</span> Name 5 </a>
-      </li>
-      <li class="sidebar-list-item">
-        <a href="#" target="_blank">
-          <span class="material-icons-outlined">settings</span> Name 6
-        </a>
+      <li class="sidebar-list-item" v-for="bus5Point in bus5Points" :key="bus5Point">
+        {{ bus5Point.properties.name }}
       </li>
     </ul>
   </aside>
