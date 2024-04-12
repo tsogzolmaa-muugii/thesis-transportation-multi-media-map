@@ -1,0 +1,469 @@
+{
+  "type": "FeatureCollection",
+  "name": "tram_4_6_points",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Újbuda-Központ M",
+        "xcoord": 649955.63228359399,
+        "ycoord": 236671.1285703629,
+        "latitude": 47.4740081,
+        "logitude": 19.0468608
+      },
+      "geometry": { "type": "Point", "coordinates": [19.046856705125787, 47.473989501229021] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Budafoki Út / Karinthy Frigyes Út",
+        "xcoord": 650476.47959178255,
+        "ycoord": 236683.19145669905,
+        "latitude": 47.4740979,
+        "logitude": 19.0537666
+      },
+      "geometry": { "type": "Point", "coordinates": [19.053766605124757, 47.474097901228426] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Budafoki Út / Karinthy Frigyes Út",
+        "xcoord": 650404.10501519695,
+        "ycoord": 236639.74004661152,
+        "latitude": 47.4737071,
+        "logitude": 19.0528064
+      },
+      "geometry": { "type": "Point", "coordinates": [19.052806405124901, 47.473707101228456] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Újbuda-Központ M",
+        "xcoord": 649989.44648955332,
+        "ycoord": 236673.97399368929,
+        "latitude": 47.4740151,
+        "logitude": 19.0473053
+      },
+      "geometry": { "type": "Point", "coordinates": [19.047305305125725, 47.474015101228957] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pet?fi Híd, Budai Hídf?",
+        "xcoord": 650867.58696504461,
+        "ycoord": 236973.81880349034,
+        "latitude": 47.4767117,
+        "logitude": 19.0589558
+      },
+      "geometry": { "type": "Point", "coordinates": [19.058955805124, 47.476711701227863] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pet?fi Híd, Budai Hídf?",
+        "xcoord": 650916.22186692106,
+        "ycoord": 236998.15049338154,
+        "latitude": 47.4769305,
+        "logitude": 19.0596011
+      },
+      "geometry": { "type": "Point", "coordinates": [19.059601105123896, 47.476930501227869] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boráros Tér H",
+        "xcoord": 651403.52558349655,
+        "ycoord": 237355.99983819525,
+        "latitude": 47.4801485,
+        "logitude": 19.0660674
+      },
+      "geometry": { "type": "Point", "coordinates": [19.066067405122951, 47.480148501227262] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boráros Tér H",
+        "xcoord": 651451.18992395618,
+        "ycoord": 237382.41472133918,
+        "latitude": 47.480386,
+        "logitude": 19.0666999
+      },
+      "geometry": { "type": "Point", "coordinates": [19.066699905122857, 47.48038600122716] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mester Utca / Ferenc Körút",
+        "xcoord": 651585.16479237704,
+        "ycoord": 237586.73113592254,
+        "latitude": 47.4822235,
+        "logitude": 19.0684782
+      },
+      "geometry": { "type": "Point", "coordinates": [19.068478205122595, 47.482223501226954] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mester Utca / Ferenc Körút",
+        "xcoord": 651604.86464499321,
+        "ycoord": 237647.7045047172,
+        "latitude": 47.4827719,
+        "logitude": 19.0687398
+      },
+      "geometry": { "type": "Point", "coordinates": [19.068739805122558, 47.482771901226961] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corvin-Negyed M",
+        "xcoord": 651690.48563206987,
+        "ycoord": 237954.58122199404,
+        "latitude": 47.485532,
+        "logitude": 19.069877
+      },
+      "geometry": { "type": "Point", "coordinates": [19.069877005122411, 47.485532001226808] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corvin-Negyed M",
+        "xcoord": 651708.60418526211,
+        "ycoord": 238029.90725912777,
+        "latitude": 47.4862095,
+        "logitude": 19.0701177
+      },
+      "geometry": { "type": "Point", "coordinates": [19.070117705122374, 47.486209501226739] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harminckettesek Tere",
+        "xcoord": 651759.52897879842,
+        "ycoord": 238492.17641609712,
+        "latitude": 47.4903674,
+        "logitude": 19.0707952
+      },
+      "geometry": { "type": "Point", "coordinates": [19.070795205122291, 47.490367401226607] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harminckettesek Tere",
+        "xcoord": 651747.23983647255,
+        "ycoord": 238408.30240861102,
+        "latitude": 47.489613,
+        "logitude": 19.0706318
+      },
+      "geometry": { "type": "Point", "coordinates": [19.070631805122314, 47.489613001226644] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rákóczi Tér M",
+        "xcoord": 651781.02178154234,
+        "ycoord": 238721.11450756405,
+        "latitude": 47.4924266,
+        "logitude": 19.0710813
+      },
+      "geometry": { "type": "Point", "coordinates": [19.071081305122259, 47.492426601226569] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rákóczi Tér M",
+        "xcoord": 651788.28779908619,
+        "ycoord": 238765.64228140877,
+        "latitude": 47.4928271,
+        "logitude": 19.0711779
+      },
+      "geometry": { "type": "Point", "coordinates": [19.071177905122248, 47.492827101226531] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blaha Lujza Tér M",
+        "xcoord": 651755.14629437681,
+        "ycoord": 239146.30808112436,
+        "latitude": 47.4962512,
+        "logitude": 19.0707395
+      },
+      "geometry": { "type": "Point", "coordinates": [19.070739505122329, 47.496251201226542] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blaha Lujza Tér M",
+        "xcoord": 651748.63607670052,
+        "ycoord": 239200.98227353237,
+        "latitude": 47.496743,
+        "logitude": 19.0706533
+      },
+      "geometry": { "type": "Point", "coordinates": [19.070653305122345, 47.49674300122652] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wesselényi Utca / Erzsébet Körút",
+        "xcoord": 651638.42816260178,
+        "ycoord": 239548.30860138059,
+        "latitude": 47.4998674,
+        "logitude": 19.0691918
+      },
+      "geometry": { "type": "Point", "coordinates": [19.069191805122578, 47.499867401226588] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wesselényi Utca / Erzsébet Körút",
+        "xcoord": 651614.04821191239,
+        "ycoord": 239605.72434612067,
+        "latitude": 47.5003839,
+        "logitude": 19.0688684
+      },
+      "geometry": { "type": "Point", "coordinates": [19.068868405122625, 47.500383901226613] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Király Utca / Erzsébet Körút",
+        "xcoord": 651412.46772594273,
+        "ycoord": 239882.06888788141,
+        "latitude": 47.50287,
+        "logitude": 19.0661936
+      },
+      "geometry": { "type": "Point", "coordinates": [19.066193605123036, 47.502870001226817] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Király Utca / Erzsébet Körút",
+        "xcoord": 651382.11979686422,
+        "ycoord": 239928.02209881818,
+        "latitude": 47.5032834,
+        "logitude": 19.0657909
+      },
+      "geometry": { "type": "Point", "coordinates": [19.065790905123102, 47.503283401226824] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oktogon M",
+        "xcoord": 651165.80802662019,
+        "ycoord": 240180.84731857647,
+        "latitude": 47.5055579,
+        "logitude": 19.0629202
+      },
+      "geometry": { "type": "Point", "coordinates": [19.062920205123543, 47.505557901227071] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oktogon M",
+        "xcoord": 651127.81688002113,
+        "ycoord": 240229.76886681622,
+        "latitude": 47.505998,
+        "logitude": 19.062416
+      },
+      "geometry": { "type": "Point", "coordinates": [19.06241600512362, 47.505998001227063] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nyugati Pályaudvar M",
+        "xcoord": 650694.23048995261,
+        "ycoord": 240672.35413265339,
+        "latitude": 47.5099795,
+        "logitude": 19.0566609
+      },
+      "geometry": { "type": "Point", "coordinates": [19.056660905124499, 47.509979501227491] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nyugati Pályaudvar M",
+        "xcoord": 650655.61540497339,
+        "ycoord": 240703.67959853093,
+        "latitude": 47.5102613,
+        "logitude": 19.0561483
+      },
+      "geometry": { "type": "Point", "coordinates": [19.05614830512458, 47.51026130122758] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jászai Mari Tér",
+        "xcoord": 650098.52251576667,
+        "ycoord": 240992.56459651035,
+        "latitude": 47.51286,
+        "logitude": 19.0487525
+      },
+      "geometry": { "type": "Point", "coordinates": [19.048752505125691, 47.512860001228148] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jászai Mari Tér",
+        "xcoord": 650058.0974493312,
+        "ycoord": 241022.5710107807,
+        "latitude": 47.5131299,
+        "logitude": 19.0482158
+      },
+      "geometry": { "type": "Point", "coordinates": [19.048215805125775, 47.513129901228176] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Margitsziget / Margit Híd",
+        "xcoord": 649634.81240535935,
+        "ycoord": 241202.03720276486,
+        "latitude": 47.514744,
+        "logitude": 19.0425959
+      },
+      "geometry": { "type": "Point", "coordinates": [19.042595905126625, 47.514744001228628] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Margitsziget / Margit Híd",
+        "xcoord": 649758.34892299317,
+        "ycoord": 241168.02033056071,
+        "latitude": 47.5144381,
+        "logitude": 19.0442361
+      },
+      "geometry": { "type": "Point", "coordinates": [19.044236105126377, 47.514438101228521] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Margit Híd, Budai Hídf? H",
+        "xcoord": 649348.52998035389,
+        "ycoord": 241185.97892241424,
+        "latitude": 47.5145993,
+        "logitude": 19.038795
+      },
+      "geometry": { "type": "Point", "coordinates": [19.038795005127191, 47.514599301228991] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Margit Híd, Budai Hídf? H",
+        "xcoord": 649301.64412132942,
+        "ycoord": 241189.10902141829,
+        "latitude": 47.5146274,
+        "logitude": 19.0381725
+      },
+      "geometry": { "type": "Point", "coordinates": [19.038172505127285, 47.514627401229006] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mechwart Liget",
+        "xcoord": 648847.99432689499,
+        "ycoord": 240786.49681748913,
+        "latitude": 47.5110053,
+        "logitude": 19.0321506
+      },
+      "geometry": { "type": "Point", "coordinates": [19.032150605128166, 47.511005301229638] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mechwart Liget",
+        "xcoord": 648791.98600760486,
+        "ycoord": 240765.54110045457,
+        "latitude": 47.5108167,
+        "logitude": 19.0314071
+      },
+      "geometry": { "type": "Point", "coordinates": [19.031407105128277, 47.510816701229693] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Széna Tér",
+        "xcoord": 648482.25704892818,
+        "ycoord": 240511.73632631896,
+        "latitude": 47.5085331,
+        "logitude": 19.0272961
+      },
+      "geometry": { "type": "Point", "coordinates": [19.02729610512888, 47.508533101230086] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Széna Tér",
+        "xcoord": 648445.8924301567,
+        "ycoord": 240470.97820422865,
+        "latitude": 47.5081664,
+        "logitude": 19.0268135
+      },
+      "geometry": { "type": "Point", "coordinates": [19.026813505128949, 47.508166401230142] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Széll Kálmán Tér M",
+        "xcoord": 648323.22899160348,
+        "ycoord": 240375.13571616189,
+        "latitude": 47.507304,
+        "logitude": 19.0251855
+      },
+      "geometry": { "type": "Point", "coordinates": [19.025185505129183, 47.507304001230253] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Széll Kálmán Tér M",
+        "xcoord": 648271.41191622952,
+        "ycoord": 240382.35563796991,
+        "latitude": 47.507378,
+        "logitude": 19.0245001
+      },
+      "geometry": { "type": "Point", "coordinates": [19.024497605129284, 47.507368801230349] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Móricz Zsigmond Körtér M",
+        "xcoord": 650078.51246136881,
+        "ycoord": 237063.59606392001,
+        "latitude": 47.4775197,
+        "logitude": 19.0484869
+      },
+      "geometry": { "type": "Point", "coordinates": [19.048486905125564, 47.4775197012288] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Móricz Zsigmond Körtér M",
+        "xcoord": 650076.88441345212,
+        "ycoord": 237055.69154125778,
+        "latitude": 47.4774486,
+        "logitude": 19.0484653
+      },
+      "geometry": { "type": "Point", "coordinates": [19.048465305125564, 47.477448601228836] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Budafoki Út / Karinthy Frigyes Út",
+        "xcoord": 650453.79250308441,
+        "ycoord": 236902.38198791235,
+        "latitude": 47.4760695,
+        "logitude": 19.0534658
+      },
+      "geometry": { "type": "Point", "coordinates": [19.053465805124809, 47.476069501228395] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Budafoki Út / Karinthy Frigyes Út",
+        "xcoord": 650501.72475378937,
+        "ycoord": 236876.28136013509,
+        "latitude": 47.4758347,
+        "logitude": 19.0541017
+      },
+      "geometry": { "type": "Point", "coordinates": [19.054101705124715, 47.475834701228329] }
+    }
+  ]
+}

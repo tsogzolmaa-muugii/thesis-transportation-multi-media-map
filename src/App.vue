@@ -3,6 +3,7 @@ import HeaderComponent from './components/HeaderComponent.vue'
 import Sidebar from './components/Sidebar.vue';
 import { passenger_data_list } from './data/data.js';
 import { convertForSlider } from './utils/conversion.js'
+import TransportMap from './components/TransportMap.vue';
 </script>
 
 <script>
@@ -85,6 +86,8 @@ export default {
           <h1>{{ numericValue }}</h1>
         </div>
       </div>
+
+      <TransportMap />
 
       <div class="charts">
         <div class="charts-card">

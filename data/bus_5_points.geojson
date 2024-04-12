@@ -1,0 +1,836 @@
+{
+  "type": "FeatureCollection",
+  "name": "bus_5_A_2023_10_04",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pasar�ti t�r",
+        "lat": 47.5236781,
+        "long": 18.9942618
+      },
+      "geometry": { "type": "Point", "coordinates": [18.9942618, 47.5236781] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harangvir�g utca",
+        "lat": 47.5218293,
+        "long": 18.9975348
+      },
+      "geometry": { "type": "Point", "coordinates": [18.9975348, 47.5218293] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vir�g �rok",
+        "lat": 47.5192107,
+        "long": 19.0009785
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0009785, 47.5192107] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G�bor �ron utca / Pasar�ti �t",
+        "lat": 47.5162207,
+        "long": 19.004509
+      },
+      "geometry": { "type": "Point", "coordinates": [19.004509, 47.5162207] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "J�lia utca",
+        "lat": 47.5142772,
+        "long": 19.0072214
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0072214, 47.5142772] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vasas sportp�lya",
+        "lat": 47.5120167,
+        "long": 19.0083681
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0083681, 47.5120167] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V�rosmajor",
+        "lat": 47.5096189,
+        "long": 19.0139853
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0139853, 47.5096189] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ny�l utca",
+        "lat": 47.5090547,
+        "long": 19.0170365
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0170365, 47.5090547] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sz�ll K�lm�n t�r M (Csaba utca)",
+        "lat": 47.5067348,
+        "long": 19.0228102
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0228102, 47.5067348] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K�rm�ci utca",
+        "lat": 47.5044116,
+        "long": 19.0250026
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0250026, 47.5044116] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Korl�t utca",
+        "lat": 47.5019735,
+        "long": 19.0273819
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0273819, 47.5019735] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mik� utca",
+        "lat": 47.4992779,
+        "long": 19.0308237
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0308237, 47.4992779] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alag�t utca",
+        "lat": 47.4979067,
+        "long": 19.0329337
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0329337, 47.4979067] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "D�zsa Gy�rgy t�r",
+        "lat": 47.4944583,
+        "long": 19.0379314
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0379314, 47.4944583] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "D�brentei t�r",
+        "lat": 47.4925446,
+        "long": 19.0423365
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0423365, 47.4925446] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "M�rcius 15. t�r",
+        "lat": 47.4918997,
+        "long": 19.0517359
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0517359, 47.4918997] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ferenciek tere M",
+        "lat": 47.4929853,
+        "long": 19.054722
+      },
+      "geometry": { "type": "Point", "coordinates": [19.054722, 47.4929853] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Astoria M",
+        "lat": 47.4946815,
+        "long": 19.0608064
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0608064, 47.4946815] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ur�nia",
+        "lat": 47.4957101,
+        "long": 19.0650293
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0650293, 47.4957101] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blaha Lujza t�r M",
+        "lat": 47.4974996,
+        "long": 19.0713435
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0713435, 47.4974996] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Husz�r utca",
+        "lat": 47.4991937,
+        "long": 19.0778192
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0778192, 47.4991937] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Keleti p�lyaudvar M",
+        "lat": 47.5004213,
+        "long": 19.081228
+      },
+      "geometry": { "type": "Point", "coordinates": [19.081228, 47.5004213] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reiner Frigyes park",
+        "lat": 47.5042687,
+        "long": 19.0892992
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0892992, 47.5042687] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ch�z�r Andr�s utca",
+        "lat": 47.5059125,
+        "long": 19.0913067
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0913067, 47.5059125] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stef�nia �t / Th�k�ly �t",
+        "lat": 47.5081116,
+        "long": 19.0942312
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0942312, 47.5081116] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zugl� vas�t�llom�s",
+        "lat": 47.511744,
+        "long": 19.0991493
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0991493, 47.511744] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Korong utca",
+        "lat": 47.5147116,
+        "long": 19.0970787
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0970787, 47.5147116] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erzs�bet kir�lyn� �tja, alulj�r�",
+        "lat": 47.5169031,
+        "long": 19.0939646
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0939646, 47.5169031] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laky Adolf utca",
+        "lat": 47.519586,
+        "long": 19.097226
+      },
+      "geometry": { "type": "Point", "coordinates": [19.097226, 47.519586] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nagy Lajos kir�ly �tja / Czobor utca",
+        "lat": 47.5228145,
+        "long": 19.1019661
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1019661, 47.5228145] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "F?r�sz utca",
+        "lat": 47.5262494,
+        "long": 19.1050051
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1050051, 47.5262494] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R�kospatak utca",
+        "lat": 47.5292222,
+        "long": 19.1075628
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1075628, 47.5292222] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miskolci utca",
+        "lat": 47.5325602,
+        "long": 19.1106545
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1106545, 47.5325602] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "�v utca",
+        "lat": 47.5347416,
+        "long": 19.1127287
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1127287, 47.5347416] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "T�th Istv�n utca",
+        "lat": 47.5382964,
+        "long": 19.1170033
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1170033, 47.5382964] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V�g utca",
+        "lat": 47.5400127,
+        "long": 19.1192756
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1192756, 47.5400127] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Op�l utca",
+        "lat": 47.5420712,
+        "long": 19.1171293
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1171293, 47.5420712] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sz�chenyi �t",
+        "lat": 47.545145,
+        "long": 19.1124487
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1124487, 47.545145] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Szent Korona �tja",
+        "lat": 47.547825,
+        "long": 19.1150634
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1150634, 47.547825] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wessel�nyi utca",
+        "lat": 47.5498647,
+        "long": 19.1168679
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1168679, 47.5498647] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Szerencs utca",
+        "lat": 47.5515409,
+        "long": 19.1177737
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1177737, 47.5515409] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R�kos �ti szakrendel?",
+        "lat": 47.5546628,
+        "long": 19.1189366
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1189366, 47.5546628] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Illy�s Gyula utca",
+        "lat": 47.5586756,
+        "long": 19.120683
+      },
+      "geometry": { "type": "Point", "coordinates": [19.120683, 47.5586756] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Epres sor",
+        "lat": 47.5622315,
+        "long": 19.1235974
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1235974, 47.5622315] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juhos utca",
+        "lat": 47.5645274,
+        "long": 19.1274453
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1274453, 47.5645274] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kossuth utca, lak�telep",
+        "lat": 47.565612,
+        "long": 19.1298251
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1298251, 47.565612] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R�kospalota, Kossuth utca",
+        "lat": 47.5676495,
+        "long": 19.1271556
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1271556, 47.5676495] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R�kospalota, Kossuth utca",
+        "lat": 47.5674661,
+        "long": 19.1248249
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1248249, 47.5674661] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kossuth utca, lak�telep",
+        "lat": 47.5667258,
+        "long": 19.1288019
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1288019, 47.5667258] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juhos utca",
+        "lat": 47.5649743,
+        "long": 19.1289014
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1289014, 47.5649743] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Epres sor",
+        "lat": 47.5616865,
+        "long": 19.1232218
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1232218, 47.5616865] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Illy�s Gyula utca",
+        "lat": 47.5591259,
+        "long": 19.1210419
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1210419, 47.5591259] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R�kos �ti szakrendel?",
+        "lat": 47.5538552,
+        "long": 19.1187614
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1187614, 47.5538552] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wessel�nyi utca",
+        "lat": 47.5492737,
+        "long": 19.1168047
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1168047, 47.5492737] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Szent Korona �tja",
+        "lat": 47.5472444,
+        "long": 19.1145659
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1145659, 47.5472444] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sz�chenyi �t",
+        "lat": 47.5461474,
+        "long": 19.1131372
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1131372, 47.5461474] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Op�l utca",
+        "lat": 47.5423011,
+        "long": 19.1171005
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1171005, 47.5423011] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V�g utca",
+        "lat": 47.5401705,
+        "long": 19.1198104
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1198104, 47.5401705] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "T�th Istv�n utca",
+        "lat": 47.5379915,
+        "long": 19.1166231
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1166231, 47.5379915] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "�v utca",
+        "lat": 47.5344653,
+        "long": 19.1125147
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1125147, 47.5344653] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miskolci utca",
+        "lat": 47.5322618,
+        "long": 19.110426
+      },
+      "geometry": { "type": "Point", "coordinates": [19.110426, 47.5322618] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R�kospatak utca",
+        "lat": 47.5286575,
+        "long": 19.1070933
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1070933, 47.5286575] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "F?r�sz utca",
+        "lat": 47.5258209,
+        "long": 19.1046629
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1046629, 47.5258209] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nagy Lajos kir�ly �tja / Czobor utca",
+        "lat": 47.522382,
+        "long": 19.1015916
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1015916, 47.522382] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Laky Adolf utca",
+        "lat": 47.5197088,
+        "long": 19.0974235
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0974235, 47.5197088] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erzs�bet kir�lyn� �tja, alulj�r�",
+        "lat": 47.5174497,
+        "long": 19.0940547
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0940547, 47.5174497] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Korong utca",
+        "lat": 47.5146579,
+        "long": 19.0972968
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0972968, 47.5146579] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zugl� vas�t�llom�s",
+        "lat": 47.5112325,
+        "long": 19.0986344
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0986344, 47.5112325] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stef�nia �t / Th�k�ly �t",
+        "lat": 47.5087339,
+        "long": 19.0954131
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0954131, 47.5087339] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ch�z�r Andr�s utca",
+        "lat": 47.5058452,
+        "long": 19.0915963
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0915963, 47.5058452] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reiner Frigyes park",
+        "lat": 47.5035128,
+        "long": 19.0881547
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0881547, 47.5035128] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Keleti p�lyaudvar M",
+        "lat": 47.5004068,
+        "long": 19.0818717
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0818717, 47.5004068] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Husz�r utca",
+        "lat": 47.499112,
+        "long": 19.0782041
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0782041, 47.499112] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blaha Lujza t�r M",
+        "lat": 47.4968374,
+        "long": 19.0700229
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0700229, 47.4968374] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ur�nia",
+        "lat": 47.4955357,
+        "long": 19.0653694
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0653694, 47.4955357] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Astoria M",
+        "lat": 47.4944427,
+        "long": 19.0611152
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0611152, 47.4944427] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ferenciek tere M",
+        "lat": 47.4929537,
+        "long": 19.0553339
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0553339, 47.4929537] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "M�rcius 15. t�r",
+        "lat": 47.4915567,
+        "long": 19.0513042
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0513042, 47.4915567] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Szarvas t�r",
+        "lat": 47.4912939,
+        "long": 19.0435328
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0435328, 47.4912939] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "D�zsa Gy�rgy t�r",
+        "lat": 47.493912,
+        "long": 19.0375236
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0375236, 47.493912] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alag�t utca",
+        "lat": 47.496634,
+        "long": 19.034368
+      },
+      "geometry": { "type": "Point", "coordinates": [19.034368, 47.496634] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Korl�t utca",
+        "lat": 47.5017649,
+        "long": 19.0274104
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0274104, 47.5017649] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K�rm�ci utca",
+        "lat": 47.5041787,
+        "long": 19.0249873
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0249873, 47.5041787] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sz�ll K�lm�n t�r M (Csaba utca)",
+        "lat": 47.5060193,
+        "long": 19.0231973
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0231973, 47.5060193] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ny�l utca",
+        "lat": 47.5086531,
+        "long": 19.0188112
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0188112, 47.5086531] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "V�rosmajor",
+        "lat": 47.5095453,
+        "long": 19.0136815
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0136815, 47.5095453] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vasas sportp�lya",
+        "lat": 47.5114985,
+        "long": 19.0088887
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0088887, 47.5114985] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "J�lia utca",
+        "lat": 47.5146928,
+        "long": 19.0064843
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0064843, 47.5146928] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "G�bor �ron utca / Pasar�ti �t",
+        "lat": 47.5167822,
+        "long": 19.0039234
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0039234, 47.5167822] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vir�g �rok",
+        "lat": 47.5195389,
+        "long": 19.0004401
+      },
+      "geometry": { "type": "Point", "coordinates": [19.0004401, 47.5195389] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harangvir�g utca",
+        "lat": 47.5213525,
+        "long": 18.9979676
+      },
+      "geometry": { "type": "Point", "coordinates": [18.9979676, 47.5213525] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pasar�ti t�r",
+        "lat": 47.5236596,
+        "long": 18.9940685
+      },
+      "geometry": { "type": "Point", "coordinates": [18.9940685, 47.5236596] }
+    }
+  ]
+}
