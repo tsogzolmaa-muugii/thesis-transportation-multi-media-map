@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <ol-map style="height: 650px">
+    <ol-map style="height: 400px">
       <!--
           Geojson data niihaa projectoiniig taaruulah heregtei. Taaruulaagui baigaa bolohoor tseg bolj haragdaad baina.
           <ol-projection-register

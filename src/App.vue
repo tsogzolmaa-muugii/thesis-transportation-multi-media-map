@@ -82,7 +82,7 @@ export default {
 
       {{ passenger_data }}
 
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-4">
           <div>Upload Tram 4,6 data</div>
           <input id="files" type="file" @change="handleFileSelectTram46" />
