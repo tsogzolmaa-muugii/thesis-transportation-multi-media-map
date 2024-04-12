@@ -11,7 +11,8 @@ export default {
   emits: ['hideSideBar'],
   data() {
     return {
-      bus5Points: []
+      bus5Points: [],
+      tram46Points: [],
     }
   },
   methods: {
@@ -19,10 +20,16 @@ export default {
       const response = await fetch('../data/bus_5_points.geojson')
       const data = await response.json()
       this.bus5Points = data.features
+    },
+    async getTram46Points() {
+      const response = await fetch('../data/tram_4_6_points.geojson')
+      const data = await response.json()
+      this.tram46Points = data.features
     }
   },
   mounted() {
     this.getBus5Points()
+    this.getTram46Points()
   }
 }
 </script>
@@ -87,7 +94,11 @@ export default {
           data-bs-parent="#accordionExample"
         >
           <div class="accordion-body">
-            ...
+            <ul class="sidebar-list">
+              <li class="sidebar-list-item" v-for="tram46Point in tram46Points" :key="tram46Point">
+                {{ tram46Point.properties.name }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
