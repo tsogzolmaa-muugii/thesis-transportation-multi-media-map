@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar.vue';
 import { passenger_data_list } from './data/data.js';
 import { convertForSlider } from './utils/conversion.js'
 import TransportMap from './components/TransportMap.vue';
+import BarChart from './components/BarChart.vue';
 </script>
 
 <script>
@@ -13,6 +14,7 @@ export default {
       sideBarShouldBeShown: false,
       numericValue: 5,
       passenger_data: null,
+      bus5passengerData: [],
     }
   },
   methods: {
@@ -87,12 +89,14 @@ export default {
         </div>
       </div>
 
+      {{ bus5passengerData }}
+
       <TransportMap />
 
       <div class="charts">
         <div class="charts-card">
-          <h2 class="chart-title">Name 11</h2>
-          <div id="bar-chart"></div>
+          <h2 class="chart-title">Passengers</h2>
+          <BarChart />
         </div>
 
         <div class="charts-card">
