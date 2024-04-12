@@ -8,7 +8,7 @@ defineProps({
 </script>
 <script>
 export default {
-  emits: ['hideSideBar'],
+  emits: ['hideSideBar', 'updateChosenStationName'],
   data() {
     return {
       bus5Points: [],
@@ -69,7 +69,7 @@ export default {
           <div class="accordion-body">
             <ul class="sidebar-list">
               <li class="sidebar-list-item" v-for="bus5Point in bus5Points" :key="bus5Point">
-                {{ bus5Point.properties.name }}
+                <input type="submit" @click="$emit('updateChosenStationName', $event)" :value="bus5Point.properties.name">
               </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@ export default {
           <div class="accordion-body">
             <ul class="sidebar-list">
               <li class="sidebar-list-item" v-for="tram46Point in tram46Points" :key="tram46Point">
-                {{ tram46Point.properties.name }}
+                <input type="submit" @click="$emit('updateChosenStationName', $event)" :value="tram46Point.properties.name">
               </li>
             </ul>
           </div>

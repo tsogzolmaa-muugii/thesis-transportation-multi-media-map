@@ -1,7 +1,17 @@
 <template>
   <Bar id="my-chart-id" :options="chartOptions" :data="chartData" />
 </template>
-  
+
+
+<script setup>
+defineProps({
+  chartData: {
+    type: Object,
+    required: true
+  },
+})
+</script>
+
 <script>
 import { Bar } from 'vue-chartjs'
 import {
@@ -21,10 +31,6 @@ export default {
   components: { Bar },
   data() {
     return {
-      chartData: {
-        labels: ['January', 'February', 'March'],
-        datasets: [{ data: [40, 20, 12] }]
-      },
       chartOptions: {
         responsive: true
       }
