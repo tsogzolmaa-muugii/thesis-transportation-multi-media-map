@@ -101,101 +101,13 @@
       <div class="col-4">
         <input class="form-control" type="time" @change="updatePassengerNumbersByTime" />
       </div>
-      <div class="col-4">
-        <div>Upload Tram 4,6 data</div>
-        <input id="files" type="file" @change="handleFileSelectTram46" />
-        <div>Upload Bus 5 data</div>
-        <input id="files" type="file" @change="handleFileSelectBus5" />
-      </div>
     </div>
   </div>
 </template>
   
-  <script setup>
+<script setup>
 import { ref, inject, onMounted } from 'vue'
 import { Fill, Style, Stroke, Circle, Text } from 'ol/style'
-
-function handleFileSelectTram46(event) {
-  if (event.target.files[0]) {
-    const reader = new FileReader()
-    reader.onload = handleFileLoadTram46
-    reader.readAsText(event.target.files[0])
-  } else {
-    // Herev file baihgui bol fileContentTram46 hooson baih yostoi.
-    fileContentTram46.value = JSON.stringify('')
-  }
-}
-
-const fileContentTram46 = ref(null)
-
-function handleFileLoadTram46(event) {
-  fileContentTram46.value = event.target.result
-}
-
-function handleFileSelectBus5(event) {
-  if (event.target.files[0]) {
-    const reader = new FileReader()
-    reader.onload = handleFileBus5
-    reader.readAsText(event.target.files[0])
-  } else {
-    // Herev file baihgui bol fileContentBus5 hooson baih yostoi.
-    fileContentBus5.value = JSON.stringify('')
-  }
-}
-
-const fileContentBus5 = ref(null)
-
-function handleFileBus5(event) {
-  fileContentBus5.value = event.target.result
-}
-
-function updatePassengerNumbersByTime(e) {
-  // Tram 4,6
-  const passengerDataGeoJSONTram46 = JSON.parse(fileContentTram46._value)
-  if (passengerDataGeoJSONTram46) {
-    const givenTime = e.target.value
-    const newDataList = passengerDataGeoJSONTram46.features
-      .map((d, idx) => {
-        if (d.geometry) {
-          const coordinates = d.geometry.coordinates
-          const numPassengers = d.properties[givenTime]
-          if (numPassengers != null) {
-            return {
-              coordinates: coordinates,
-              numPassengers: numPassengers,
-              idx: idx
-            }
-          }
-        }
-      })
-      .filter((d) => d)
-    passengerNumberDataListTram46.value = newDataList
-  }
-  // Bus
-  const passengerDataGeoJSONBus5 = JSON.parse(fileContentBus5._value)
-  if (passengerDataGeoJSONBus5) {
-    const givenTime = e.target.value
-    const newDataList = passengerDataGeoJSONBus5.features
-      .map((d, idx) => {
-        if (d.geometry) {
-          const coordinates = d.geometry.coordinates
-          const numPassengers = d.properties[givenTime]
-          if (numPassengers != null) {
-            return {
-              coordinates: coordinates,
-              numPassengers: numPassengers,
-              idx: idx
-            }
-          }
-        }
-      })
-      .filter((d) => d)
-    passengerNumberDataListBus5.value = newDataList
-  }
-}
-
-const passengerNumberDataListTram46 = ref([])
-const passengerNumberDataListBus5 = ref([])
 
 //  Map objects
 const center = ref([19.048293905125572, 47.493834801228868]) // Budapest
@@ -308,6 +220,76 @@ onMounted(() => {
     layerList.value.push(PassengerNumberCircleTram46.value.tileLayer)
   }
 })
+
+
+defineProps({
+  fileContentTram46: {
+    type: String,
+    required: true
+  },
+  fileContentBus5: {
+    type: String,
+    required: true
+  }
+})
+</script>
+
+<script>
+export default {
+  data() {
+    return {
+      passengerNumberDataListTram46: [],
+      passengerNumberDataListBus5: [],
+    }
+  },
+  methods: {
+    updatePassengerNumbersByTime(e) {
+      // Tram 4,6
+      const passengerDataGeoJSONTram46 = JSON.parse(this.fileContentTram46)
+      if (passengerDataGeoJSONTram46) {
+        const givenTime = e.target.value
+        const newDataList = passengerDataGeoJSONTram46.features
+          .map((d, idx) => {
+            if (d.geometry) {
+              const coordinates = d.geometry.coordinates
+              const numPassengers = d.properties[givenTime]
+              if (numPassengers != null) {
+                return {
+                  coordinates: coordinates,
+                  numPassengers: numPassengers,
+                  idx: idx
+                }
+              }
+            }
+          })
+          .filter((d) => d)
+        this.passengerNumberDataListTram46 = newDataList
+      }
+      // Bus
+      const passengerDataGeoJSONBus5 = JSON.parse(this.fileContentBus5)
+      if (passengerDataGeoJSONBus5) {
+        const givenTime = e.target.value
+        const newDataList = passengerDataGeoJSONBus5.features
+          .map((d, idx) => {
+            if (d.geometry) {
+              const coordinates = d.geometry.coordinates
+              const numPassengers = d.properties[givenTime]
+              if (numPassengers != null) {
+                return {
+                  coordinates: coordinates,
+                  numPassengers: numPassengers,
+                  idx: idx
+                }
+              }
+            }
+          })
+          .filter((d) => d)
+        this.passengerNumberDataListBus5 = newDataList
+      }
+    }
+  }
+}
+
 </script>
   
   <style scoped>

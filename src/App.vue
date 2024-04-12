@@ -14,7 +14,8 @@ export default {
       sideBarShouldBeShown: false,
       numericValue: 5,
       passenger_data: null,
-      bus5passengerData: [],
+      fileContentTram46: JSON.stringify(''),
+      fileContentBus5: JSON.stringify('')
     }
   },
   methods: {
@@ -30,6 +31,32 @@ export default {
     },
     hideSideBar() {
       this.sideBarShouldBeShown = false
+    },
+    handleFileSelectTram46(event) {
+      if (event.target.files[0]) {
+        const reader = new FileReader()
+        reader.onload = this.handleFileLoadTram46
+        reader.readAsText(event.target.files[0])
+      } else {
+        // Herev file baihgui bol fileContentTram46 hooson baih yostoi.
+        this.fileContentTram46 = JSON.stringify('')
+      }
+    },
+    handleFileLoadTram46(event) {
+      this.fileContentTram46 = event.target.result
+    },
+    handleFileSelectBus5(event) {
+      if (event.target.files[0]) {
+        const reader = new FileReader()
+        reader.onload = this.handleFileBus5
+        reader.readAsText(event.target.files[0])
+      } else {
+        // Herev file baihgui bol fileContentBus5 hooson baih yostoi.
+        this.fileContentBus5 = JSON.stringify('')
+      }
+    },
+    handleFileBus5(event) {
+      this.fileContentBus5 = event.target.result
     }
   }
 }
@@ -55,43 +82,16 @@ export default {
 
       {{ passenger_data }}
 
-      <div class="main-cards">
-        <div class="card">
-          <div class="card-inner">
-            <h3>Name 7</h3>
-            <span class="material-icons-outlined">inventory_2</span>
-          </div>
-          <h1>{{ numericValue }}</h1>
-        </div>
-
-        <div class="card">
-          <div class="card-inner">
-            <h3>Name 8</h3>
-            <span class="material-icons-outlined">category</span>
-          </div>
-          <h1>{{ numericValue }}</h1>
-        </div>
-
-        <div class="card">
-          <div class="card-inner">
-            <h3>Name 9</h3>
-            <span class="material-icons-outlined">groups</span>
-          </div>
-          <h1>{{ numericValue }}</h1>
-        </div>
-
-        <div class="card">
-          <div class="card-inner">
-            <h3>Name 10</h3>
-            <span class="material-icons-outlined">notification_important</span>
-          </div>
-          <h1>{{ numericValue }}</h1>
+      <div class="row">
+        <div class="col-4">
+          <div>Upload Tram 4,6 data</div>
+          <input id="files" type="file" @change="handleFileSelectTram46" />
+          <div>Upload Bus 5 data</div>
+          <input id="files" type="file" @change="handleFileSelectBus5" />
         </div>
       </div>
 
-      {{ bus5passengerData }}
-
-      <TransportMap />
+      <TransportMap :fileContentTram46="fileContentTram46" :fileContentBus5="fileContentBus5" />
 
       <div class="charts">
         <div class="charts-card">
