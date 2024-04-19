@@ -32,9 +32,9 @@ export default {
       <span>
         <input type="range" @change="$emit('updateTimeOfDay', $event)" name="time-range" id="time-range" />
       </span>
-      <!--<span class="material-icons-outlined">notifications</span>-->
-      <!--<span class="material-icons-outlined">email</span>-->
-      <span class="material-icons-outlined">account_circle</span>
+      <a class="material-icons-outlined link-to-github" href="https://github.com/tsogzolmaa-muugii/thesis-transportation-multi-media-map">
+      code
+      </a>
     </div>
   </header>
 </template>
@@ -42,5 +42,12 @@ export default {
 <style>
 .menu-icon {
   cursor: pointer;
+}
+.link-to-github {
+  text-decoration: none;
+  color: #000;
+}
+.link-to-github:hover {
+  color: #cecece;
 }
 </style>
