@@ -186,12 +186,12 @@ export default {
         :sliderNumericValue="sliderNumericValue" />
 
       <div class="charts">
-        <div class="charts-card">
+        <div v-if="chosenStopNameBus5" class="charts-card">
           <h2 class="chart-title">Bus 5 passengers</h2>
           <p>Stop: {{ chosenStopNameBus5 }}</p>
           <BarChart v-if="bus5ChartData" :chartData="bus5ChartData" />
         </div>
-        <div class="charts-card">
+        <div v-if="chosenStationNameTram46" class="charts-card">
           <h2 class="chart-title">Tram 4,6 passengers</h2>
           <p>Station: {{ chosenStationNameTram46 }}</p>
           <BarChart v-if="tram46ChartData" :chartData="tram46ChartData" />
