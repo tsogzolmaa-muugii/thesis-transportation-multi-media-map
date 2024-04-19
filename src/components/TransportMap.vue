@@ -97,9 +97,17 @@
       />
     </ol-map>
 
-    <div class="row">
-      <div class="col-4">
-        <input class="form-control" type="time" @change="updatePassengerNumbersByTime" />
+    <div class="mt-2">
+      <div class="row">
+        <div class="col-3">
+          <div class="slider-time">
+            {{ this.sliderTime }}
+          </div>
+        </div>
+        <div class="col-6">
+          <input type="range" @change="$emit('updateTimeOfDay', $event)" name="time-range" class="time-range" id="time-range" />
+        </div>
+        <div class="col-3"></div>
       </div>
     </div>
   </div>
@@ -230,69 +238,100 @@ defineProps({
   fileContentBus5: {
     type: String,
     required: true
+  },
+  sliderNumericValue: {
+    type: Number,
+    required: true
   }
 })
 </script>
 
 <script>
 export default {
-  data() {
-    return {
-      passengerNumberDataListTram46: [],
-      passengerNumberDataListBus5: [],
+  emits: ['updateTimeOfDay'],
+  computed: {
+    sliderTime() {
+      const numericValue = this.sliderNumericValue
+      if (numericValue < 10) {
+        return `0${numericValue}:00`
+      } else {
+        return `${numericValue}:00`
+      }
+    },
+    passengerNumberDataListTram46() {
+      // Tram 4,6
+      const time = this.sliderTime
+      return this.getTram46DataFilteredByTime(time)
+    },
+    passengerNumberDataListBus5() {
+      // Bus
+      const time = this.sliderTime
+      return this.getBus5DataFilteredByTime(time)
     }
   },
   methods: {
-    updatePassengerNumbersByTime(e) {
-      // Tram 4,6
+    getTram46DataFilteredByTime(time) {
       const passengerDataGeoJSONTram46 = JSON.parse(this.fileContentTram46)
       if (passengerDataGeoJSONTram46) {
-        const givenTime = e.target.value
-        const newDataList = passengerDataGeoJSONTram46.features
+        if (passengerDataGeoJSONTram46.features) {
+          const newDataList = passengerDataGeoJSONTram46.features
           .map((d, idx) => {
             if (d.geometry) {
               const coordinates = d.geometry.coordinates
-              const numPassengers = d.properties[givenTime]
+              const numPassengers = d.properties[time]
               if (numPassengers != null) {
-                return {
-                  coordinates: coordinates,
-                  numPassengers: numPassengers,
-                  idx: idx
+                  return {
+                    coordinates: coordinates,
+                    numPassengers: numPassengers,
+                    idx: idx
+                  }
                 }
               }
-            }
-          })
-          .filter((d) => d)
-        this.passengerNumberDataListTram46 = newDataList
+            })
+            .filter((d) => d)
+          return newDataList
+        }
       }
-      // Bus
+      return []
+    },
+    getBus5DataFilteredByTime(time) {
       const passengerDataGeoJSONBus5 = JSON.parse(this.fileContentBus5)
       if (passengerDataGeoJSONBus5) {
-        const givenTime = e.target.value
-        const newDataList = passengerDataGeoJSONBus5.features
-          .map((d, idx) => {
-            if (d.geometry) {
-              const coordinates = d.geometry.coordinates
-              const numPassengers = d.properties[givenTime]
-              if (numPassengers != null) {
-                return {
-                  coordinates: coordinates,
-                  numPassengers: numPassengers,
-                  idx: idx
+        if (passengerDataGeoJSONBus5.features) {
+          const newDataList = passengerDataGeoJSONBus5.features
+            .map((d, idx) => {
+              if (d.geometry) {
+                const coordinates = d.geometry.coordinates
+                const numPassengers = d.properties[time]
+                if (numPassengers != null) {
+                  return {
+                    coordinates: coordinates,
+                    numPassengers: numPassengers,
+                    idx: idx
+                  }
                 }
               }
-            }
-          })
-          .filter((d) => d)
-        this.passengerNumberDataListBus5 = newDataList
+            })
+            .filter((d) => d)
+          return newDataList
+        }
       }
+      return []
     }
   }
 }
 
 </script>
   
-  <style scoped>
+<style scoped>
+.time-range {
+  width: 100%;
+}
+
+.slider-time {
+  text-align: end;
+}
+
 .ol-map {
   position: relative;
 }

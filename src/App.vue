@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       sideBarShouldBeShown: false,
-      numericValue: 5,
+      sliderNumericValue: 7,
       passenger_data: null,
       fileContentTram46: JSON.stringify({}),
       fileContentBus5: JSON.stringify({}),
@@ -26,10 +26,10 @@ export default {
   },
   methods: {
     updateTimeOfDay(e) {
-      const numericValue = convertForSlider(5, 22, e.target.value)
-      this.numericValue = numericValue
+      const sliderNumericValue = convertForSlider(5, 22, e.target.value)
+      this.sliderNumericValue = sliderNumericValue
 
-      const passenger_data = passenger_data_list.find((d) => d.left == numericValue)
+      const passenger_data = passenger_data_list.find((d) => d.left == sliderNumericValue)
       this.passenger_data = passenger_data
     },
     showSideBar() {
@@ -162,7 +162,6 @@ export default {
   <div class="grid-container">
     <HeaderComponent
       @showSideBar="showSideBar"
-      @updateTimeOfDay="updateTimeOfDay"
       :chosenStopNameBus5="chosenStopNameBus5"
       :chosenStationNameTram46="chosenStationNameTram46"
     />
@@ -187,7 +186,11 @@ export default {
         </div>
       </div>
 
-      <TransportMap :fileContentTram46="fileContentTram46" :fileContentBus5="fileContentBus5" />
+      <TransportMap
+        :fileContentTram46="fileContentTram46"
+        @updateTimeOfDay="updateTimeOfDay"
+        :fileContentBus5="fileContentBus5"
+        :sliderNumericValue="sliderNumericValue" />
 
       <div class="charts">
         <div class="charts-card">

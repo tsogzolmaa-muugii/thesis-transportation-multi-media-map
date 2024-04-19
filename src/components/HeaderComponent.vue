@@ -13,7 +13,7 @@ defineProps({
 
 <script>
 export default {
-  emits: ['showSideBar', 'updateTimeOfDay'],
+  emits: ['showSideBar'],
 }
 </script>
 
@@ -29,9 +29,6 @@ export default {
       <div v-if="chosenStopNameBus5">Chosen <b>Bus 5</b> stop name: <b>{{ chosenStopNameBus5 }}</b></div>
     </div>
     <div class="header-right">
-      <span>
-        <input type="range" @change="$emit('updateTimeOfDay', $event)" name="time-range" id="time-range" />
-      </span>
       <a class="material-icons-outlined link-to-github" href="https://github.com/tsogzolmaa-muugii/thesis-transportation-multi-media-map">
       code
       </a>
