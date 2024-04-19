@@ -97,47 +97,51 @@ export default {
       const bus5Data = JSON.parse(this.fileContentBus5)
       const tram46Data = JSON.parse(this.fileContentTram46)
 
-      console.log("oooooooooooo")
-
       if (this.chosenStationName) {
-        console.log('goijgoirjgi [1]')
-        const bus5passengerData = bus5Data.features.find((d) => {
-          return d.properties.name == this.chosenStationName
-        })
-
-        if (bus5passengerData) {
-            const passengers = labels.map((l) => {
-              const num_passengers = bus5passengerData.properties[l]
-              if (num_passengers) {
-                return num_passengers
-              } else {
-                return null
-              }
+        if (bus5Data) {
+          if (bus5Data.features) {
+            const bus5passengerData = bus5Data.features.find((d) => {
+              return d.properties.name == this.chosenStationName
             })
-            this.bus5ChartData = {
-              labels: labels,
-              datasets: [{ data: passengers }]
+    
+            if (bus5passengerData) {
+                const passengers = labels.map((l) => {
+                  const num_passengers = bus5passengerData.properties[l]
+                  if (num_passengers) {
+                    return num_passengers
+                  } else {
+                    return null
+                  }
+                })
+                this.bus5ChartData = {
+                  labels: labels,
+                  datasets: [{ data: passengers }]
+                }
             }
+          }
         }
 
-        const tram46passengerData = tram46Data.features.find((d) => {
-          return d.properties.name == this.chosenStationName
-        })
-
-        if (tram46passengerData) {
-            const passengers = labels.map((l) => {
-              const num_passengers = tram46passengerData.properties[l]
-              if (num_passengers) {
-                return num_passengers
-              } else {
-                return null
-              }
+        if (tram46Data) {
+          if (tram46Data.features) {
+            const tram46passengerData = tram46Data.features.find((d) => {
+              return d.properties.name == this.chosenStationName
             })
-            console.log('goijgoirjgi')
-            this.tram46ChartData = {
-              labels: labels,
-              datasets: [{ data: passengers }]
+    
+            if (tram46passengerData) {
+                const passengers = labels.map((l) => {
+                  const num_passengers = tram46passengerData.properties[l]
+                  if (num_passengers) {
+                    return num_passengers
+                  } else {
+                    return null
+                  }
+                })
+                this.tram46ChartData = {
+                  labels: labels,
+                  datasets: [{ data: passengers }]
+                }
             }
+          }
         }
       }
     }
