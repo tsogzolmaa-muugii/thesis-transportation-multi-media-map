@@ -68,8 +68,8 @@ export default {
         >
           <div class="accordion-body">
             <ul class="sidebar-list">
-              <li class="sidebar-list-item" v-for="bus5Point in bus5Points" :key="bus5Point">
-                <input type="submit" @click="$emit('updateChosenStationName', $event)" :value="bus5Point.properties.name">
+              <li class="sidebar-list-item" v-for="bus5Point in bus5Points" :key="bus5Point" @click="$emit('updateChosenStationName', $event, bus5Point.properties.name)">
+                {{ bus5Point.properties.name }}
               </li>
             </ul>
           </div>
@@ -95,8 +95,8 @@ export default {
         >
           <div class="accordion-body">
             <ul class="sidebar-list">
-              <li class="sidebar-list-item" v-for="tram46Point in tram46Points" :key="tram46Point">
-                <input type="submit" @click="$emit('updateChosenStationName', $event)" :value="tram46Point.properties.name">
+              <li class="sidebar-list-item" v-for="tram46Point in tram46Points" :key="tram46Point" @click="$emit('updateChosenStationName', $event, tram46Point.properties.name)">
+                {{ tram46Point.properties.name }}
               </li>
             </ul>
           </div>
@@ -106,8 +106,13 @@ export default {
   </aside>
 </template>
 
-<style>
+<style scoped>
 .side-bar-close {
   cursor: pointer;
+}
+.sidebar-list-item:hover {
+  cursor: pointer;
+  color:rgb(70, 165, 113);
+  border-bottom: 1px solid rgb(70, 165, 113);
 }
 </style>

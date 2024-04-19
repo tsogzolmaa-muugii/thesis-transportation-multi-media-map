@@ -35,8 +35,8 @@ export default {
     hideSideBar() {
       this.sideBarShouldBeShown = false
     },
-    updateChosenStationName(e) {
-      this.chosenStationName = e.target.value
+    updateChosenStationName(e, name) {
+      this.chosenStationName = name
       this.updateCharts()
     },
     handleFileSelectTram46(event) {
@@ -97,7 +97,10 @@ export default {
       const bus5Data = JSON.parse(this.fileContentBus5)
       const tram46Data = JSON.parse(this.fileContentTram46)
 
+      console.log("oooooooooooo")
+
       if (this.chosenStationName) {
+        console.log('goijgoirjgi [1]')
         const bus5passengerData = bus5Data.features.find((d) => {
           return d.properties.name == this.chosenStationName
         })
@@ -130,6 +133,7 @@ export default {
                 return null
               }
             })
+            console.log('goijgoirjgi')
             this.tram46ChartData = {
               labels: labels,
               datasets: [{ data: passengers }]
