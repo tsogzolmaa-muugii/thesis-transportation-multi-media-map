@@ -14,11 +14,13 @@ export default {
       sideBarShouldBeShown: false,
       numericValue: 5,
       passenger_data: null,
-      fileContentTram46: JSON.stringify(''),
-      fileContentBus5: JSON.stringify(''),
+      fileContentTram46: JSON.stringify({}),
+      fileContentBus5: JSON.stringify({}),
       bus5ChartData: null,
       tram46ChartData: null,
-      chosenStationName: ''
+      chosenStationName: '',
+      bus5Data: {},
+      tram46Data: {}, 
     }
   },
   methods: {
@@ -94,13 +96,13 @@ export default {
         '22:00',
         '23:00'
       ]
-      const bus5Data = JSON.parse(this.fileContentBus5)
-      const tram46Data = JSON.parse(this.fileContentTram46)
+      this.bus5Data = JSON.parse(this.fileContentBus5)
+      this.tram46Data = JSON.parse(this.fileContentTram46)
 
       if (this.chosenStationName) {
-        if (bus5Data) {
-          if (bus5Data.features) {
-            const bus5passengerData = bus5Data.features.find((d) => {
+        if (this.bus5Data) {
+          if (this.bus5Data.features) {
+            const bus5passengerData = this.bus5Data.features.find((d) => {
               return d.properties.name == this.chosenStationName
             })
     
@@ -121,9 +123,9 @@ export default {
           }
         }
 
-        if (tram46Data) {
-          if (tram46Data.features) {
-            const tram46passengerData = tram46Data.features.find((d) => {
+        if (this.tram46Data) {
+          if (this.tram46Data.features) {
+            const tram46passengerData = this.tram46Data.features.find((d) => {
               return d.properties.name == this.chosenStationName
             })
     
@@ -155,6 +157,8 @@ export default {
 
     <Sidebar
       :sideBarShouldBeShown="sideBarShouldBeShown"
+      :bus5Data="bus5Data"
+      :tram46Data="tram46Data"
       @hideSideBar="hideSideBar"
       @updateChosenStationName="updateChosenStationName"
     />

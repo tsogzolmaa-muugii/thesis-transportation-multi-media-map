@@ -3,34 +3,20 @@ defineProps({
   sideBarShouldBeShown: {
     type: Boolean,
     required: true
-  }
+  },
+  bus5Data: {
+    type: Object,
+    required: true
+  },
+  tram46Data: {
+    type: Object,
+    required: true
+  },
 })
 </script>
 <script>
 export default {
   emits: ['hideSideBar', 'updateChosenStationName'],
-  data() {
-    return {
-      bus5Points: [],
-      tram46Points: [],
-    }
-  },
-  methods: {
-    async getBus5Points() {
-      const response = await fetch('../data/bus_5_points.geojson')
-      const data = await response.json()
-      this.bus5Points = data.features
-    },
-    async getTram46Points() {
-      const response = await fetch('../data/tram_4_6_points.geojson')
-      const data = await response.json()
-      this.tram46Points = data.features
-    }
-  },
-  mounted() {
-    this.getBus5Points()
-    this.getTram46Points()
-  }
 }
 </script>
 
@@ -68,7 +54,7 @@ export default {
         >
           <div class="accordion-body">
             <ul class="sidebar-list">
-              <li class="sidebar-list-item" v-for="bus5Point in bus5Points" :key="bus5Point" @click="$emit('updateChosenStationName', $event, bus5Point.properties.name)">
+              <li :class="['sidebar-list-item', (bus5Point.properties.average) ? '': 'sidebar-list-item-no-data']" v-for="bus5Point in bus5Data.features" :key="bus5Point" @click="$emit('updateChosenStationName', $event, bus5Point.properties.name)">
                 {{ bus5Point.properties.name }}
               </li>
             </ul>
@@ -95,8 +81,8 @@ export default {
         >
           <div class="accordion-body">
             <ul class="sidebar-list">
-              <li class="sidebar-list-item" v-for="tram46Point in tram46Points" :key="tram46Point" @click="$emit('updateChosenStationName', $event, tram46Point.properties.name)">
-                {{ tram46Point.properties.name }}
+              <li :class="['sidebar-list-item', (tram46Point.properties.average) ? '': 'sidebar-list-item-no-data']" v-for="tram46Point in tram46Data.features" :key="tram46Point" @click="$emit('updateChosenStationName', $event, tram46Point.properties.name)">
+                {{ tram46Point.properties.name }} <span class="badge text-bg-secondary">{{ tram46Point.properties.average }}</span>
               </li>
             </ul>
           </div>
@@ -110,6 +96,10 @@ export default {
 .side-bar-close {
   cursor: pointer;
 }
+.sidebar-list-item-no-data {
+  opacity: 0.3;
+}
+
 .sidebar-list-item:hover {
   cursor: pointer;
   color:rgb(70, 165, 113);
