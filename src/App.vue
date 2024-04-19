@@ -18,7 +18,8 @@ export default {
       fileContentBus5: JSON.stringify({}),
       bus5ChartData: null,
       tram46ChartData: null,
-      chosenStationName: '',
+      chosenStationNameTram46: '',
+      chosenStopNameBus5: '',
       bus5Data: {},
       tram46Data: {}, 
     }
@@ -37,8 +38,12 @@ export default {
     hideSideBar() {
       this.sideBarShouldBeShown = false
     },
-    updateChosenStationName(e, name) {
-      this.chosenStationName = name
+    updateChosenStationNameTram46(e, name) {
+      this.chosenStationNameTram46 = name
+      this.updateCharts()
+    },
+    updatechosenStopNameBus5(e, name) {
+      this.chosenStopNameBus5 = name
       this.updateCharts()
     },
     handleFileSelectTram46(event) {
@@ -99,11 +104,11 @@ export default {
       this.bus5Data = JSON.parse(this.fileContentBus5)
       this.tram46Data = JSON.parse(this.fileContentTram46)
 
-      if (this.chosenStationName) {
+      if (this.chosenStopNameBus5) {
         if (this.bus5Data) {
           if (this.bus5Data.features) {
             const bus5passengerData = this.bus5Data.features.find((d) => {
-              return d.properties.name == this.chosenStationName
+              return d.properties.name == this.chosenStopNameBus5
             })
     
             if (bus5passengerData) {
@@ -122,11 +127,13 @@ export default {
             }
           }
         }
+      }
 
+      if (this.chosenStationNameTram46) {
         if (this.tram46Data) {
           if (this.tram46Data.features) {
             const tram46passengerData = this.tram46Data.features.find((d) => {
-              return d.properties.name == this.chosenStationName
+              return d.properties.name == this.chosenStationNameTram46
             })
     
             if (tram46passengerData) {
@@ -153,24 +160,24 @@ export default {
 
 <template>
   <div class="grid-container">
-    <HeaderComponent @showSideBar="showSideBar" @updateTimeOfDay="updateTimeOfDay" />
+    <HeaderComponent
+      @showSideBar="showSideBar"
+      @updateTimeOfDay="updateTimeOfDay"
+      :chosenStopNameBus5="chosenStopNameBus5"
+      :chosenStationNameTram46="chosenStationNameTram46"
+    />
 
     <Sidebar
       :sideBarShouldBeShown="sideBarShouldBeShown"
       :bus5Data="bus5Data"
       :tram46Data="tram46Data"
       @hideSideBar="hideSideBar"
-      @updateChosenStationName="updateChosenStationName"
+      @updateChosenStationNameTram46="updateChosenStationNameTram46"
+      @updatechosenStopNameBus5="updatechosenStopNameBus5"
     />
 
     <!-- Main -->
     <main class="main-container">
-      <div class="main-title">
-        <h2>DASHBOARD</h2>
-      </div>
-
-      {{ chosenStationName }}
-
       <div class="row mb-5">
         <div class="col-4">
           <div>Upload Tram 4,6 data</div>
@@ -185,10 +192,12 @@ export default {
       <div class="charts">
         <div class="charts-card">
           <h2 class="chart-title">Bus 5 passengers</h2>
+          <p>Stop: {{ chosenStopNameBus5 }}</p>
           <BarChart v-if="bus5ChartData" :chartData="bus5ChartData" />
         </div>
         <div class="charts-card">
           <h2 class="chart-title">Tram 4,6 passengers</h2>
+          <p>Station: {{ chosenStationNameTram46 }}</p>
           <BarChart v-if="tram46ChartData" :chartData="tram46ChartData" />
         </div>
       </div>

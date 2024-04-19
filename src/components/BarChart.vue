@@ -9,6 +9,10 @@ defineProps({
     type: Object,
     required: true
   },
+  chartTitle: {
+    type: String,
+    required: true
+  }
 })
 </script>
 

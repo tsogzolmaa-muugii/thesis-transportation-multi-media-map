@@ -16,7 +16,7 @@ defineProps({
 </script>
 <script>
 export default {
-  emits: ['hideSideBar', 'updateChosenStationName'],
+  emits: ['hideSideBar', 'updateChosenStationNameTram46', 'updatechosenStopNameBus5'],
 }
 </script>
 
@@ -54,7 +54,10 @@ export default {
         >
           <div class="accordion-body">
             <ul class="sidebar-list">
-              <li :class="['sidebar-list-item', (bus5Point.properties.average) ? '': 'sidebar-list-item-no-data']" v-for="bus5Point in bus5Data.features" :key="bus5Point" @click="$emit('updateChosenStationName', $event, bus5Point.properties.name)">
+              <li
+                :class="['sidebar-list-item', (bus5Point.properties.average) ? '': 'sidebar-list-item-no-data']"
+                v-for="bus5Point in bus5Data.features" :key="bus5Point"
+                @click="$emit('updatechosenStopNameBus5', $event, bus5Point.properties.name)">
                 {{ bus5Point.properties.name }}
               </li>
             </ul>
@@ -81,7 +84,10 @@ export default {
         >
           <div class="accordion-body">
             <ul class="sidebar-list">
-              <li :class="['sidebar-list-item', (tram46Point.properties.average) ? '': 'sidebar-list-item-no-data']" v-for="tram46Point in tram46Data.features" :key="tram46Point" @click="$emit('updateChosenStationName', $event, tram46Point.properties.name)">
+              <li
+                :class="['sidebar-list-item', (tram46Point.properties.average) ? '': 'sidebar-list-item-no-data']"
+                v-for="tram46Point in tram46Data.features" :key="tram46Point"
+                @click="$emit('updateChosenStationNameTram46', $event, tram46Point.properties.name)">
                 {{ tram46Point.properties.name }} <span class="badge text-bg-secondary">{{ tram46Point.properties.average }}</span>
               </li>
             </ul>
