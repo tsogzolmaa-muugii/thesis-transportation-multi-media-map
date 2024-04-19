@@ -16,7 +16,7 @@ defineProps({
 </script>
 <script>
 export default {
-  emits: ['hideSideBar', 'updateChosenStationNameTram46', 'updatechosenStopNameBus5'],
+  emits: ['hideSideBar', 'updateChosenStationNameTram46', 'updatechosenStopNameBus5', 'handleFileSelectTram46', 'handleFileSelectBus5'],
 }
 </script>
 
@@ -33,7 +33,14 @@ export default {
       >
     </div>
 
-    <div class="accordion" id="accordionExample">
+    <div class="container">
+      <div>Upload Tram 4,6 data</div>
+      <input id="files" type="file" @change="$emit('handleFileSelectTram46', $event)" />
+      <div class="mt-2">Upload Bus 5 data</div>
+      <input id="files" type="file" @change="$emit('handleFileSelectBus5', $event)" />
+    </div>
+
+    <div class="accordion mt-3" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header">
           <button

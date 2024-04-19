@@ -173,19 +173,12 @@ export default {
       @hideSideBar="hideSideBar"
       @updateChosenStationNameTram46="updateChosenStationNameTram46"
       @updatechosenStopNameBus5="updatechosenStopNameBus5"
+      @handleFileSelectTram46="handleFileSelectTram46"
+      @handleFileSelectBus5="handleFileSelectBus5"
     />
 
     <!-- Main -->
     <main class="main-container">
-      <div class="row mb-5">
-        <div class="col-4">
-          <div>Upload Tram 4,6 data</div>
-          <input id="files" type="file" @change="handleFileSelectTram46" />
-          <div>Upload Bus 5 data</div>
-          <input id="files" type="file" @change="handleFileSelectBus5" />
-        </div>
-      </div>
-
       <TransportMap
         :fileContentTram46="fileContentTram46"
         @updateTimeOfDay="updateTimeOfDay"

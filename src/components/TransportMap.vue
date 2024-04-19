@@ -101,7 +101,7 @@
       <div class="row">
         <div class="col-3">
           <div class="slider-time">
-            {{ this.sliderTime }}
+            {{ sliderTime }}
           </div>
         </div>
         <div class="col-6">
