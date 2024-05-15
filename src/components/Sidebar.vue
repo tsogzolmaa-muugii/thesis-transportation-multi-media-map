@@ -26,7 +26,7 @@ export default {
     <div class="sidebar-title">
       <div class="sidebar-brand">
         <span class="material-icons-outlined">emoji_transportation</span>
-        Public Transportation Webmap
+        BudMove
       </div>
       <span class="material-icons-outlined side-bar-close" @click="$emit('hideSideBar')"
         >close</span
